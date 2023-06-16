@@ -1,0 +1,127 @@
+section.result-container {
+  width: inherit;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: inherit;
+  background: linear-gradient(190deg, #7759fd, #312cea);
+}
+
+.result-container-title p {
+  margin: 0;
+  color: #ecececd3;
+  font-family: "Rubik";
+  font-size: 20px;
+}
+
+.result-container-score {
+  width: 100%;
+}
+
+.result-container-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-result {
+  font-size: 68px;
+}
+.of-result {
+  font-size: 16px;
+}
+.numbers {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #4b21cb, #4d3ef1);
+  color: #b9a9fd;
+  font-weight: bold;
+}
+
+.result-container-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container-status .status {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.result-container-text {
+  display: flex;
+  justify-content: center;
+}
+
+.result-container-text p {
+  width: 75%;
+  margin: 0;
+  color: #cac4ff;
+  font-family: "Rubik";
+  line-height: 22px;
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+@media (max-width: 923px) {
+  .result-container {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  section.result-container {
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    padding: 10px;
+    height: 40%;
+  }
+  .result-container-status {
+    padding: 15px;
+  }
+  .numbers {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  span {
+    font-size: 15px;
+    font-family: "Rubik";
+  }
+  .top-result {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .result-container-title {
+    margin-top: 15px;
+  }
+  .result-container-title p {
+    font-size: 18px;
+  }
+  .result-container-status .status {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .result-container-text p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 40%;
+    line-height: 18px;
+  }
+}
+@media (max-width: 280px) {
+  .result-container-text p {
+    font-size: 12px;
+    width: 70%;
+  }
+}

@@ -1,0 +1,44 @@
+@import "result-component.css";
+@import "summary-component.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-top: 30px;
+}
+
+.container {
+  width: 65%;
+  height: 465px;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 15px 15px 20px #00000050;
+  background-color: white;
+}
+
+@media (max-width: 923px) {
+  .container {
+    justify-content: space-around;
+    justify-items: center;
+    box-shadow: 0 -1px 40px 3px #00000038;
+  }
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  .container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+    box-shadow: none;
+  }
+}
